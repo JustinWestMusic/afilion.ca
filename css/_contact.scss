@@ -1,0 +1,78 @@
+@import "variables";
+
+form
+{
+    margin-top: 50px;
+}
+
+.contactForm input,
+.contactForm textarea
+{
+    width: 100%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid #eee;
+    font-family: $fontStackBD;
+    color: black;
+    margin-bottom: 40px;
+    padding-bottom: 18px;
+    transition: border 0.3s;
+    outline: 0;
+
+    &:focus
+    {
+        border: none;
+        border-bottom: 1px solid #eee;
+        box-shadow: none;
+    }
+
+    &::-webkit-input-placeholder
+    {
+        color: #777;
+    }
+
+    &::-moz-placeholder,
+    {
+        color: #777; /* Mozilla Firefox 4 to 18 */
+    }
+
+    &:-moz-placeholder,
+    {
+        color: #777; /* Mozilla Firefox 19+ */
+    }
+
+    &::-ms-input-placeholder
+    {
+        color: #777;
+    }
+
+}
+
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea
+{
+    box-shadow: none;
+
+    placeholder
+    {
+        color: grey;
+    }
+}
+
+#msg
+{
+    height: 200px;
+}
+
+
+#send
+{
+    @extend .buttons;
+    width: 100px;
+
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}

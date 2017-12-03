@@ -1,0 +1,38 @@
+$fontStackHD : 'Questrial', Helvetica, Arial, sans-serif;
+$fontStackBD : 'Lato', Helvetica, Arial, sans-serif;
+
+
+
+$menu-hover-lines-transition: all 0.3s ease;
+$menu-hover-lines-border-width: 2px;
+
+
+$image-hover-wrapper-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+$image-hover-wrapper-transition-delay: 0s;
+$image-hover-wrapper-banner-width: 75%;
+$image-hover-wrapper-banner-topspace: 25%;
+$image-hover-wrapper-banner-bg: rgba(255, 255, 255 ,0.8);
+$image-hover-wrapper-icon-size: 24px;
+
+
+.buttons
+{
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+
+	&:hover
+	{
+		color: white;
+	}
+}
+
+.pageTitle
+{
+  margin-bottom: 25px;
+  display: block;
+  padding-top: 10px;
+  background: url(../images/pg-bg.jpg) no-repeat 50% 0/cover scroll;
+  color: white;
+}

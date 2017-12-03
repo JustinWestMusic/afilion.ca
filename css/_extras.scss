@@ -1,0 +1,77 @@
+@import "variables";
+
+.presetsAccordion
+{
+    margin-left: 0;
+
+.description 
+{
+  margin: 1em auto 2.25em;
+}
+
+    .inner 
+    {
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+      
+        .show 
+        {
+          /*display: block;*/
+        }
+    }
+
+    .toggle 
+        {
+            width: 100%;
+            display: block;
+            background: rgba(0,0,0,0.8);
+            color: #fefefe;
+            padding: .75em;
+            transition: background .3s ease;
+          
+            &:hover 
+            {
+                background: rgba(0, 0, 0, 0.9);
+            }
+
+        }
+
+span
+{
+	font-style: italic;
+}
+
+.massivePresets
+{
+	background: #383c50;
+}
+
+.sylenth1
+{
+    background: #5e5048;
+}
+
+.sytrus
+{
+    background: #fda73f;
+}
+
+ul 
+{
+
+  
+    li 
+    {
+        margin: .5em 0;
+        list-style-type: none;
+      
+        
+    }
+}
+}
+
+.faq
+{
+    margin-top: 25px;
+}

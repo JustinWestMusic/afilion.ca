@@ -1,0 +1,156 @@
+@import "variables";
+
+/*Music Main Page*/
+
+.image-hover-wrapper
+{
+  margin-bottom: 25px;
+}
+
+.albumCovers, .albumCovers2
+{
+  p
+  {
+    display: none;
+  }
+}
+
+
+/*Interior Music Pages*/
+
+.musicSec
+{
+	text-align: center;
+
+	h2
+	{
+		text-transform: uppercase;
+	}
+
+	a
+	{
+		@extend .buttons;
+	}
+
+	p
+	{
+		&:last-of-type
+		{
+			margin-bottom: 25px;
+		}
+	}
+
+	img
+	{
+		margin-top: 25px;
+	}
+}
+
+.spotifySec
+{
+	margin-top: 50px;
+	text-align: center;
+
+	iframe
+	{
+		width: 100%;
+	}
+}
+
+.pageMap
+{
+	text-align: center;
+
+	span
+	{
+		color: rgba(0,0,0, 0.5);
+	}
+}
+
+
+@media screen and (min-width: 40em)
+{
+
+/*Music Main Page*/
+
+.image-hover-wrapper 
+{
+  position: relative;
+
+  a 
+  {
+    display: inline-block;
+    letter-spacing: normal;
+    line-height: initial;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    img 
+    {
+      float: left;
+      overflow: hidden;
+      width: 100%;
+
+    }
+
+    .image-hover-wrapper-reveal 
+    {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: inline;
+      height: 100%;
+      margin-left: -100%;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 80;
+      transition: $image-hover-wrapper-transition;
+      transition-delay: $image-hover-wrapper-transition-delay;
+
+      &:hover 
+      {
+        opacity: 1;
+        transition: $image-hover-wrapper-transition;
+      }
+
+      &:hover p 
+      {
+        opacity: 1;
+        transform: translateY(-100%);
+        transition: $image-hover-wrapper-transition;
+        transition-delay: $image-hover-wrapper-transition-delay;
+      }
+
+      p 
+      {
+        bottom: 0;
+        display: block;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        transition: $image-hover-wrapper-transition;
+      }
+    }
+
+    .fa 
+    {
+      font-size: $image-hover-wrapper-icon-size;
+    }
+  }
+
+  .image-hover-wrapper-banner 
+  {
+    background-color: $image-hover-wrapper-banner-bg;
+    color: white;
+    font-weight: 600;
+    left: 0;
+    padding: 0.5rem;
+    position: absolute;
+    top: $image-hover-wrapper-banner-topspace;
+    width: $image-hover-wrapper-banner-width;
+    z-index: 10;
+  }
+}
+}
